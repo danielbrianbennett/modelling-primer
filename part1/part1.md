@@ -28,6 +28,6 @@ There are different options that we can use here, but a standard one is the *sof
 <img src="https://latex.codecogs.com/gif.latex?\Pr(a=i)=\frac{e^{\beta\cdot\,Q(i)}}{\sum_{a}e^{\beta\cdot\,Q(a)}}"/>
 
 
-In words, this equation states that the probability that an agent will choose action *i* on a given trial depends on both the *Q*-value of this action (numerator of fraction) and the *Q*-values of all actions (denominator of fraction).
+In words, this equation states that the probability that an agent will choose action *i* on a given trial depends on both the *Q*-value of this action (numerator of fraction) and the *Q*-values of all actions (including the chosen action; denominator of fraction).
 
 Here, the parameter <img src="https://latex.codecogs.com/gif.latex?\beta"/>(called the *inverse temperature*) controls the randomness of choices. If <img src="https://latex.codecogs.com/gif.latex?\beta = 0"/>, the agent will choose randomly among the different actions. As <img src="https://latex.codecogs.com/gif.latex?\beta \to \text{Infinity}"/>, the probability that the agent will choose the action with the highest *Q*-value approaches 1. In practice, intermediate values of <img src="https://latex.codecogs.com/gif.latex?\beta"/> tend to perform best, since they balance the demands of exploitation (i.e., choosing the best option) with the demands of exploration (i.e., the agent should sometimes choose actions with lower *Q*-values so that it can keep learning about them).
