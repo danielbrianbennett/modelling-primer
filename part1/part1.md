@@ -21,11 +21,11 @@ This way, if more reward is received than the agent expects (i.e., <img src="htt
 
 ### Choice rule
 
-The equations above specify how the agent updates the learned values of different actions after choosing one action and observing its outcome. However, they do not specify how the agent chooses between different acitons. For this, we need to specify a *policy function*, which maps the learned $Q$-values into different choice probabilities.
+The equations above specify how the agent updates the learned values of different actions after choosing one action and observing its outcome. However, they do not specify how the agent chooses between different acitons. For this, we need to specify a *policy function*, which maps the learned *Q*-values into different choice probabilities.
 
 There are different options that we can use here, but a standard one is the *softmax* function:
 
-<img src="https://latex.codecogs.com/gif.latex?\Pr(a=i)=\frac{e^{\beta \cdot Q(i)}}{\sum_{a}e^{\beta\cdot Q(a)}}"/>
+<img src="https://latex.codecogs.com/gif.latex?\Pr(a=i)=\frac{e^{\beta\cdot\,Q(i)}}{\sum_{a}e^{\beta\cdot\,Q(a)}}"/>
 
 
 In words, this equation states that the probability that an agent will choose action *i* on a given trial depends on both the *Q*-value of this action (numerator of fraction) and the *Q*-values of all other actions (denominator of fraction).
