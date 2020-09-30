@@ -10,7 +10,7 @@ Concretely, what this will involve is
 
 In this algorithm, we assume that the subject learns different values (denoted $Q$) for different actions (denoted *a*) via trial and error. At each trial (denoted *t*), after choosing action *a* and observing the corresponding reward outcome <img src="https://latex.codecogs.com/gif.latex?r_t"/>, the agent updates the *Q*-value of the chosen action as follows:
 
-<img src="https://latex.codecogs.com/gif.latex?Q_{t+1}(a) = Q_{t}(a) + \eta \cdot \delta"/>
+<img src="https://latex.codecogs.com/gif.latex?Q_{t+1}(a)=Q_{t}(a)+\eta\cdot\delta"/>
 
 In this equation,
 
@@ -25,7 +25,7 @@ The equations above specify how the agent updates the learned values of differen
 
 There are different options that we can use here, but a standard one is the *softmax* function:
 
-<img src="https://latex.codecogs.com/gif.latex? \Pr(a = i) = \frac{e^{\beta \cdot Q(i)}}{\sum_{a} e^{\beta \cdot Q(a)}} "/>
+<img src="https://latex.codecogs.com/gif.latex?\Pr(a=i)=\frac{e^{\beta \cdot Q(i)}}{\sum_{a} e^{\beta \cdot Q(a)}} "/>
 
 
 In words, this equation states that the probability that an agent will choose action $i$ on a given trial depends on both the *Q*-value of this action (numerator of fraction) and the *Q*-values of all other actions (denominator of fraction).
