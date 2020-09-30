@@ -8,7 +8,7 @@ Concretely, what this will involve is
 
 ### Learning rule
 
-In this algorithm, we assume that the subject learns different values (denoted $Q$) for different actions (denoted *a*) via trial and error. At each trial (denoted *t*), after choosing action *a* and observing the corresponding reward outcome <img src="https://latex.codecogs.com/gif.latex?r_t"/>, the agent updates the *Q*-value of the chosen action as follows:
+In this algorithm, we assume that the subject learns different values (denoted *Q*) for different actions (denoted *a*) via trial and error. At each trial (denoted *t*), after choosing action *a* and observing the corresponding reward outcome <img src="https://latex.codecogs.com/gif.latex?r_t"/>, the agent updates the *Q*-value of the chosen action as follows:
 
 <img src="https://latex.codecogs.com/gif.latex?Q_{t+1}(a)=Q_{t}(a)+\eta\cdot\delta"/>
 
