@@ -1,3 +1,5 @@
+# Maximum Likelihood Estimation (MLE): *Q*-learning
+
 ## Getting started
 
 The goal for the first step is to write a *Q*-learning likelihood function that specifies the likelihood of a particular subject's choices under a basic *Q*-learning algorithm.
@@ -31,3 +33,8 @@ There are different options that we can use here, but a standard one is the *sof
 In words, this equation states that the probability that an agent will choose action *i* on a given trial depends on both the *Q*-value of this action (numerator of fraction) and the *Q*-values of all actions (including the chosen action; denominator of fraction).
 
 Here, the parameter <img src="https://latex.codecogs.com/gif.latex?\beta"/>(called the *inverse temperature*) controls the randomness of choices. If <img src="https://latex.codecogs.com/gif.latex?\beta = 0"/>, the agent will choose randomly among the different actions. As <img src="https://latex.codecogs.com/gif.latex?\beta \to \text{Infinity}"/>, the probability that the agent will choose the action with the highest *Q*-value approaches 1. In practice, intermediate values of <img src="https://latex.codecogs.com/gif.latex?\beta"/> tend to perform best, since they balance the demands of exploitation (i.e., choosing the best option) with the demands of exploration (i.e., the agent should sometimes choose actions with lower *Q*-values so that it can keep learning about them).
+
+### Extras
+
+- Try starting the optimisation at multiple start points (i.e., initial parameter values) for each participant. Do you get the same results every time? If not, why might this be?
+- Typically, we optimise by minimising the negative sum-log-likelihood across the participant's choices. This value is good for an optimiser, but the resulting function value is not easily interpretable. Try converting from the negative-log-likelihood back to an average choice likelihood per trial per participant (this should be more interpretable). How much variability is there across participants? Are all participants above chance? (If no participants are above chance, this suggests that there is something going wrong in your likelihood function).
