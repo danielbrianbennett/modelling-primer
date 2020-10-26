@@ -20,7 +20,7 @@ This says that the posterior probability of some hypothesis is proportional to t
 
 ## Maximum a-posteriori estimation
 
-In MAP estimation, the goal is still to get a point estimate for each parameter: that is, a single number that best summarises what we think is the most likely value per parameter per participant. (As an side, this differs from full Bayesian estimation, where the goal is to get a *probability distribution* over different possible parameter values, but we will get to that at a later stage).
+In MAP estimation, the goal is still to get a point estimate for each parameter: that is, a single number that best summarises what we think is the most likely value per parameter per participant. (As an aside, this differs from full Bayesian estimation, where the goal is to get a *probability distribution* over different possible parameter values, but we will get to that at a later stage).
 
 Concretely, what this means is that to do MAP estimation, we use the same likelihood function that we wrote for the MLE stage. But rather than passing this value into the optimiser directly, as in MLE, we pass in the *sum* of the log likelihood and the (log) prior probability of the parameter values. The resulting point estimate is then our MAP estimate of the parameters.
 
