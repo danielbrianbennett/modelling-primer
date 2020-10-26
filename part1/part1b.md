@@ -14,7 +14,7 @@ The Bayesian answer to this question is that the blown-bulb hypothesis has a far
 
 <img src="https://latex.codecogs.com/gif.latex?\text{Posterior}\propto\text{Prior}\times\text{Likelihood}"/>
 
-This says that the posterior probability of some hypothesis is proportional to the product its prior probability and the likelihood of the data given the hypothesis. Given that we are working with log-likelihoods in our optimisation, it makes more sense to take the logarithm of both sides and express the right hand side as the sum of logarithmic terms:
+This says that the posterior probability of some hypothesis is proportional to the product of its prior probability and the likelihood of the data given the hypothesis. Given that we are working with log-likelihoods in our optimisation, it makes more sense to take the logarithm of both sides and express the right hand side as the sum of logarithmic terms:
 
 <img src="https://latex.codecogs.com/gif.latex?\log(\text{Posterior})\propto\log(\text{Prior})+\log(\text{Likelihood})"/>
 
