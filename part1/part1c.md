@@ -25,7 +25,7 @@ With that disclaimer in mind, we can go over one common metric used to compare m
 Where:
 - *k* is the number of parameters in the model (i.e., 2 per participant in the symmetric model, 3 per participant in the asymmetric model)
 - *n* is the number of data points to which the model is fit (i.e., the number of trials per participant)
-- *LL* is the log likelihood of the model at the MLE parameter estimates
+- *LL* is the log likelihood (positive, not negative) of the model at the MLE parameter estimates
 
 Lower BIC values (i.e., closer to 0) indicate better model fit.
 
