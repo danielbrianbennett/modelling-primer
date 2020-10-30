@@ -20,7 +20,7 @@ The first thing to say is that there is no one right answer to this question. It
 
 With that disclaimer in mind, we can go over one common metric used to compare models fit with MLE: the Bayesian Information Criterion (BIC). The BIC is a metric that attempts to quantify model fit by trading off two quantities: first, the *goodness-of-fit* of the model and, second, the *complexity* of the model. The idea behind this is that when comparing models, we should choose the simplest model that explains the data well. This is summarised in the following equation:
 
-<img src="https://latex.codecogs.com/gif.latex?\text{BIC}=k\cdot\log(n) - 2\cdot\text{LL}"/>
+<img src="https://latex.codecogs.com/gif.latex?\text{BIC}=k\cdot\log(n)-2\cdot\text{LL}"/>
 
 Where:
 - *k* is the number of parameters in the model (i.e., 2 per participant in the symmetric model, 3 per participant in the asymmetric model)
